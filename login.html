@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="css/style-log.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <span>Welcome to Apple Store</span>
+        <form method="GET" name="vform">
+            <div id="email_div">
+                <input type="text" name="email" class="textInput" placeholder="E-mail" id="email"
+                    onchange="emailValidate()">
+                <div id="email_error"></div>
+            </div>
+            <div id="password_div">
+                <input type="password" name="password" class="textInput" placeholder="Password" id="password"
+                    onchange="passValidate()">
+                <div id="password_error"></div>
+            </div>
+            <div>
+                <input value="Login" type="button" class="btn" id="button" onclick="redirect()" />
+            </div>
+        </form>
+    </div>
+<script src="js/login.js"></script>
+</body>
+
+</html>

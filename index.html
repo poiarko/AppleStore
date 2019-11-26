@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-category">
+            <div class="number">
+                <span>Goods on page:</span>
+                <input id="countPerPage" value="6" onchange="numberProducts()">
+            </div>
+            <div id="sort">
+                <button class="hotBtn" onclick="sortByName()">Sort by name</button>
+                <button class="hotBtn" onclick="sortByPrice()">Sort by price</button>
+            </div>
+            <div class="show-category">
+                <div class="input-line">
+                    <div class="pretty p-switch p-fill">
+                        <input type="checkbox" class="order" value="mac" />
+                        <div class="state">
+                            <label>Mac</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-line">
+                    <div class="pretty p-switch p-fill">
+                        <input type="checkbox" class="order" value="iphone" />
+                        <div class="state">
+                            <label>iPhone</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cart-box">
+                <a href="cart.html"><img src="img/cart.png" alt="" id="cart-logo" ></a><input id="quantity-goods" readonly>
+            </div>
+        </div>
+        <div id="data">
+
+
+        </div>
+    </div>
+    <div id="btns"></div>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
